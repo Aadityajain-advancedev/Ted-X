@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEDx TIET — Ideas Worth Spreading</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav" role="banner">
+    <a class="nav__logo" href="#hero" aria-label="TEDx TIET Home">
+      <span class="nav__ted">TED</span><span class="nav__x">x</span><span class="nav__tiet">TIET</span>
+    </a>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu" role="navigation" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#overview">Overview</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#speakers">Speakers</a></li>
+        <li><a class="nav__link" href="#footer">Contact</a></li>
+      </ul>
+      <a class="nav__cta" href="#overview">Register Now</a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Hero section">
+
+    <!-- ANIMATION CONTAINER — reserved for external particle system -->
+    <div class="hero__animation-stage" id="animationStage" aria-hidden="true">
+      <!-- Particle / canvas system mounts here -->
+      <!-- The animation system should target: #animationStage -->
+    </div>
+
+    <!-- Overlay content — sits above animation via z-index -->
+    <div class="hero__overlay">
+      <div class="hero__content">
+        <p class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          Thapar Institute of Engineering &amp; Technology
+          <span class="hero__eyebrow-line"></span>
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__title-ted">TED</span><span class="hero__title-x">x</span>
+          <span class="hero__title-tiet">TIET</span>
+        </h1>
+
+        <p class="hero__sub">Ideas Worth Spreading</p>
+        <p class="hero__tagline">
+          A convergence of vision, curiosity, and radical thought.<br />
+          One stage. Infinite possibilities.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#overview" id="enterBtn">Enter Experience</a>
+          <a class="btn btn--ghost" href="#speakers">Past Speakers</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Edition</span>
+            <span class="hero__meta-value">2025</span>
+          </div>
+          <div class="hero__meta-divider" aria-hidden="true"></div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Venue</span>
+            <span class="hero__meta-value">Patiala, Punjab</span>
+          </div>
+          <div class="hero__meta-divider" aria-hidden="true"></div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Theme</span>
+            <span class="hero__meta-value">TBA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-track">
+        <div class="hero__scroll-thumb"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== EVENT OVERVIEW ===================== -->
+  <section class="overview" id="overview" aria-labelledby="overviewTitle">
+    <div class="overview__inner">
+
+      <div class="overview__label">
+        <span class="label-tag">01 — Event Overview</span>
+      </div>
+
+      <div class="overview__grid">
+        <div class="overview__left">
+          <h2 class="overview__title" id="overviewTitle">
+            Where Ideas<br />
+            <em>Ignite</em> Change.
+          </h2>
+        </div>
+
+        <div class="overview__right">
+          <p class="overview__body">
+            TEDx TIET is an independently organized TED event hosted at Thapar Institute of Engineering &amp; Technology, Patiala. We bring together the most compelling voices — thinkers, innovators, artists, and changemakers — to share ideas that challenge, inspire, and transform the way we see the world.
+          </p>
+          <p class="overview__body">
+            From technology to philosophy, from science to social impact, our speakers traverse disciplines and break boundaries. This is not just a conference — it is an intellectual awakening, a celebration of human curiosity, and a platform where the next generation of ideas takes flight.
+          </p>
+
+          <div class="overview__stats" role="list" aria-label="Event statistics">
+            <div class="overview__stat" role="listitem">
+              <span class="overview__stat-num">500<sup>+</sup></span>
+              <span class="overview__stat-label">Attendees</span>
+            </div>
+            <div class="overview__stat" role="listitem">
+              <span class="overview__stat-num">12</span>
+              <span class="overview__stat-label">Speakers</span>
+            </div>
+            <div class="overview__stat" role="listitem">
+              <span class="overview__stat-num">8</span>
+              <span class="overview__stat-label">Hours of Ideas</span>
+            </div>
+          </div>
+
+          <a class="btn btn--primary" href="#" aria-label="Register for TEDx TIET">Register Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT (HORIZONTAL SCROLL) ===================== -->
+  <section class="about" id="about" aria-labelledby="aboutTitle">
+    <div class="about__header">
+      <span class="label-tag">02 — About Us</span>
+      <h2 class="about__title" id="aboutTitle">Our Story</h2>
+      <p class="about__hint" aria-hidden="true">← Scroll to explore →</p>
+    </div>
+
+    <div class="about__track-wrapper" role="region" aria-label="About us panels — scroll horizontally">
+      <div class="about__track" id="aboutTrack">
+
+        <!-- Panel 1 -->
+        <article class="about__panel" aria-labelledby="panel1Title">
+          <div class="about__panel-inner">
+            <span class="about__panel-number" aria-hidden="true">01</span>
+            <div class="about__panel-content">
+              <h3 class="about__panel-title" id="panel1Title">Who We Are</h3>
+              <div class="about__panel-divider" aria-hidden="true"></div>
+              <p class="about__panel-body">
+                We are a student-led organization at Thapar Institute of Engineering &amp; Technology, united by a belief in the power of ideas to reshape the world. TEDx TIET is powered by passionate individuals from every discipline — engineers, artists, entrepreneurs — who believe that one conversation can change everything.
+              </p>
+              <p class="about__panel-body">
+                Our team handles everything from speaker curation and production to design and community engagement, ensuring every event is an experience that stays with you long after the lights go down.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 2 -->
+        <article class="about__panel about__panel--accent" aria-labelledby="panel2Title">
+          <div class="about__panel-inner">
+            <span class="about__panel-number" aria-hidden="true">02</span>
+            <div class="about__panel-content">
+              <h3 class="about__panel-title" id="panel2Title">Our Mission</h3>
+              <div class="about__panel-divider" aria-hidden="true"></div>
+              <p class="about__panel-body">
+                To create a platform where ideas — however unconventional, however audacious — are given the space and audience they deserve. We are committed to democratizing access to world-class thought leadership and fostering a culture of curiosity, empathy, and open dialogue on campus and beyond.
+              </p>
+              <p class="about__panel-body">
+                We exist to challenge comfortable thinking, bridge communities, and inspire action — one talk at a time.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 3 -->
+        <article class="about__panel" aria-labelledby="panel3Title">
+          <div class="about__panel-inner">
+            <span class="about__panel-number" aria-hidden="true">03</span>
+            <div class="about__panel-content">
+              <h3 class="about__panel-title" id="panel3Title">Our Vision</h3>
+              <div class="about__panel-divider" aria-hidden="true"></div>
+              <p class="about__panel-body">
+                To make TEDx TIET the most anticipated intellectual event in the region — a nucleus where ideas from the campus radiate outward and leave a measurable impact on the world. We envision a future where every student leaves our event believing they have something worth saying, and the courage to say it.
+              </p>
+              <p class="about__panel-body">
+                Ideas do not live in isolation. They grow when shared. We are building the ground for that growth.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /about__track -->
+    </div>
+
+    <!-- Mobile dots indicator -->
+    <div class="about__dots" role="tablist" aria-label="Panel navigation">
+      <button class="about__dot about__dot--active" role="tab" aria-selected="true"  aria-label="Panel 1: Who We Are"  data-panel="0"></button>
+      <button class="about__dot" role="tab" aria-selected="false" aria-label="Panel 2: Our Mission" data-panel="1"></button>
+      <button class="about__dot" role="tab" aria-selected="false" aria-label="Panel 3: Our Vision"  data-panel="2"></button>
+    </div>
+  </section>
+
+  <!-- ===================== PAST SPEAKERS ===================== -->
+  <section class="speakers" id="speakers" aria-labelledby="speakersTitle">
+    <div class="speakers__header">
+      <span class="label-tag">03 — Past Speakers</span>
+      <h2 class="speakers__title" id="speakersTitle">Voices That<br /><em>Moved Us</em></h2>
+    </div>
+
+    <div class="speakers__layout">
+
+      <!-- Left: scrollable card list -->
+      <div class="speakers__cards-col" aria-label="Speaker cards — scroll to browse">
+        <div class="speakers__cards" id="speakerCards" role="list">
+
+          <article class="speaker-card speaker-card--active" role="listitem"
+                   data-speaker="0" tabindex="0"
+                   aria-label="Speaker: Dr. Ananya Rajan" aria-selected="true">
+            <div class="speaker-card__tag" aria-hidden="true">01</div>
+            <div class="speaker-card__body">
+              <h3 class="speaker-card__name">Dr. Ananya Rajan</h3>
+              <p class="speaker-card__title">Neuroscientist &amp; Author</p>
+              <p class="speaker-card__blurb">Exploring the hidden architecture of consciousness and what it means to be truly human.</p>
+            </div>
+            <span class="speaker-card__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="speaker-card" role="listitem"
+                   data-speaker="1" tabindex="0"
+                   aria-label="Speaker: Rohan Mehta" aria-selected="false">
+            <div class="speaker-card__tag" aria-hidden="true">02</div>
+            <div class="speaker-card__body">
+              <h3 class="speaker-card__name">Rohan Mehta</h3>
+              <p class="speaker-card__title">Climate Entrepreneur</p>
+              <p class="speaker-card__blurb">Building regenerative economies one community at a time in the heart of rural India.</p>
+            </div>
+            <span class="speaker-card__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="speaker-card" role="listitem"
+                   data-speaker="2" tabindex="0"
+                   aria-label="Speaker: Priya Sundaram" aria-selected="false">
+            <div class="speaker-card__tag" aria-hidden="true">03</div>
+            <div class="speaker-card__body">
+              <h3 class="speaker-card__name">Priya Sundaram</h3>
+              <p class="speaker-card__title">Digital Rights Activist</p>
+              <p class="speaker-card__blurb">Why your attention is the most valuable currency of the 21st century — and who profits from it.</p>
+            </div>
+            <span class="speaker-card__arrow" aria-hidden="true">→</span>
+          </article>
+
+        </div><!-- /speaker-cards -->
+      </div>
+
+      <!-- Right: detail panel -->
+      <div class="speakers__detail" id="speakerDetail" role="region" aria-label="Speaker detail" aria-live="polite">
+
+        <!-- Speaker 0 -->
+        <div class="speaker-detail" id="speakerDetail0" data-detail="0">
+          <div class="speaker-detail__image-wrap">
+            <div class="speaker-detail__image-placeholder" aria-label="Photo of Dr. Ananya Rajan — placeholder">
+              <span class="speaker-detail__initials">AR</span>
+            </div>
+          </div>
+          <div class="speaker-detail__info">
+            <h3 class="speaker-detail__name">Dr. Ananya Rajan</h3>
+            <p class="speaker-detail__role">Neuroscientist &amp; Author</p>
+            <p class="speaker-detail__talk"><em>Talk:</em> "The Conscious Paradox"</p>
+            <p class="speaker-detail__desc">
+              Dr. Ananya Rajan is a leading neuroscientist whose research on memory, identity, and consciousness has been published in over 40 peer-reviewed journals. Her TEDx TIET talk challenged the audience to reconsider what we mean by "free will" in an age of algorithmic decision-making. Warm, witty, and profoundly erudite, her talk remains one of our most-viewed.
+            </p>
+            <a class="btn btn--ghost btn--sm" href="#" aria-label="Watch Dr. Ananya Rajan's talk">Watch Talk →</a>
+          </div>
+        </div>
+
+        <!-- Speaker 1 -->
+        <div class="speaker-detail speaker-detail--hidden" id="speakerDetail1" data-detail="1">
+          <div class="speaker-detail__image-wrap">
+            <div class="speaker-detail__image-placeholder" aria-label="Photo of Rohan Mehta — placeholder">
+              <span class="speaker-detail__initials">RM</span>
+            </div>
+          </div>
+          <div class="speaker-detail__info">
+            <h3 class="speaker-detail__name">Rohan Mehta</h3>
+            <p class="speaker-detail__role">Climate Entrepreneur</p>
+            <p class="speaker-detail__talk"><em>Talk:</em> "Soil, Soul, and Systems Change"</p>
+            <p class="speaker-detail__desc">
+              Rohan Mehta left a promising career in finance to found a network of regenerative farms across Rajasthan and Madhya Pradesh. His work has impacted over 12,000 farming families. At TEDx TIET, he made a compelling case for why the next generation of entrepreneurs must look to the earth — not just the cloud — for solutions to the climate crisis.
+            </p>
+            <a class="btn btn--ghost btn--sm" href="#" aria-label="Watch Rohan Mehta's talk">Watch Talk →</a>
+          </div>
+        </div>
+
+        <!-- Speaker 2 -->
+        <div class="speaker-detail speaker-detail--hidden" id="speakerDetail2" data-detail="2">
+          <div class="speaker-detail__image-wrap">
+            <div class="speaker-detail__image-placeholder" aria-label="Photo of Priya Sundaram — placeholder">
+              <span class="speaker-detail__initials">PS</span>
+            </div>
+          </div>
+          <div class="speaker-detail__info">
+            <h3 class="speaker-detail__name">Priya Sundaram</h3>
+            <p class="speaker-detail__role">Digital Rights Activist</p>
+            <p class="speaker-detail__talk"><em>Talk:</em> "Reclaiming the Mind Online"</p>
+            <p class="speaker-detail__desc">
+              Priya Sundaram is a lawyer, technologist, and co-founder of a leading digital rights organization based in Bengaluru. Her work focuses on data sovereignty, algorithmic accountability, and the commodification of human attention. At TEDx TIET, she delivered a sharp, urgent talk that left the audience rethinking every app on their phones.
+            </p>
+            <a class="btn btn--ghost btn--sm" href="#" aria-label="Watch Priya Sundaram's talk">Watch Talk →</a>
+          </div>
+        </div>
+
+      </div><!-- /speakers__detail -->
+    </div><!-- /speakers__layout -->
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <!-- Top row -->
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">TED<span class="footer__logo-x">x</span>TIET</span>
+          <p class="footer__brand-sub">Ideas Worth Spreading</p>
+          <p class="footer__license">Organized independently under license from TED</p>
+        </div>
+
+        <nav class="footer__links" aria-label="Footer navigation">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Quick Links</h4>
+            <ul class="footer__list">
+              <li><a href="#hero"     class="footer__link">Home</a></li>
+              <li><a href="#overview" class="footer__link">Overview</a></li>
+              <li><a href="#about"    class="footer__link">About</a></li>
+              <li><a href="#speakers" class="footer__link">Speakers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Contact</h4>
+            <ul class="footer__list">
+              <li><a href="mailto:tedx@tiet.edu" class="footer__link">tedx@tiet.edu</a></li>
+              <li><span class="footer__text">Thapar Institute of Engineering &amp; Technology</span></li>
+              <li><span class="footer__text">Patiala, Punjab — 147004</span></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Follow Us</h4>
+            <ul class="footer__list footer__social">
+              <li>
+                <a href="#" class="footer__link footer__link--social" aria-label="TEDx TIET on Instagram">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" stroke="none"/></svg>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link footer__link--social" aria-label="TEDx TIET on LinkedIn">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="8" y2="17"/><line x1="8" y1="7" x2="8" y2="8"/><path d="M11 11v6M11 14a3 3 0 0 1 6 0v3"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link footer__link--social" aria-label="TEDx TIET on YouTube">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 8s-.25-1.75-1-2.5c-.96-1-2.04-1.01-2.53-1.07C15.98 4.26 12 4.26 12 4.26s-3.98 0-6.47.17C5.04 4.49 3.96 4.5 3 5.5 2.25 6.25 2 8 2 8S1.75 10.08 1.75 12.17v1.96C1.75 16.22 2 18 2 18s.25 1.75 1 2.5c.96 1 2.22.97 2.78 1.07C7.7 21.79 12 21.74 12 21.74s3.98 0 6.47-.18c.49-.06 1.57-.07 2.53-1.07.75-.75 1-2.5 1-2.5S22.25 16.22 22.25 14.13v-1.96C22.25 10.08 22 8 22 8z"/><polygon points="9.74 15.38 9.74 8.62 16.38 12"/></svg>
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link footer__link--social" aria-label="TEDx TIET on X / Twitter">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                  X (Twitter)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 TEDx TIET. All rights reserved.</p>
+        <p class="footer__ted-disclaimer">
+          This independent TEDx event is operated under license from TED. The TED conferences are organized by The Sapling Foundation. TEDx events are not affiliated with TED.
+        </p>
+      </div>
+
+    </div><!-- /footer__inner -->
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+</body>
+</html>
