@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style src="styles.css">
+
+        
+
+
+    </style>
+    <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Hero section">
+
+    <!-- ANIMATION CONTAINER — reserved for external particle system -->
+    <div class="hero__animation-stage" id="animationStage" aria-hidden="true">
+      <!-- Particle / canvas system mounts here -->
+      <!-- The animation system should target: #animationStage -->
+    </div>
+
+    <!-- Overlay content — sits above animation via z-index -->
+    <div class="hero__overlay">
+      <div class="hero__content">
+        <p class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          Thapar Institute of Engineering &amp; Technology
+          <span class="hero__eyebrow-line"></span>
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__title-ted">TED</span><span class="hero__title-x">x</span>
+          <span class="hero__title-tiet">TIET</span>
+        </h1>
+
+        <p class="hero__sub">Ideas Worth Spreading</p>
+        <p class="hero__tagline">
+          A convergence of vision, curiosity, and radical thought.<br />
+          One stage. Infinite possibilities.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#overview" id="enterBtn">Enter Experience</a>
+          <a class="btn btn--ghost" href="#speakers">Past Speakers</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Edition</span>
+            <span class="hero__meta-value">2025</span>
+          </div>
+          <div class="hero__meta-divider" aria-hidden="true"></div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Venue</span>
+            <span class="hero__meta-value">Patiala, Punjab</span>
+          </div>
+          <div class="hero__meta-divider" aria-hidden="true"></div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Theme</span>
+            <span class="hero__meta-value">TBA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-track">
+        <div class="hero__scroll-thumb"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+
+  </section>
+    </body>
+</html>
